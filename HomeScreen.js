@@ -55,7 +55,7 @@ export default function HomeScreen() {
   }
 
   return (
-    <View style={isDayTime ? styles.containerDay : {...styles.containerDay, backgroundColor: 'lightblue'}}>
+    <View style={isDayTime ? styles.containerDay : styles.containerNight}>
       <View style={styles.userLocationContainer}>
         <View style={styles.coords}>
           {location.coords &&
@@ -82,7 +82,13 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   containerDay: {
     flex: 1,
-    backgroundColor: 'lightyellow',
+    backgroundColor: '#FEDA77',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  containerNight: {
+    flex: 1,
+    backgroundColor: '#4267B2',
     alignItems: 'center',
     justifyContent: 'space-between',
   },

@@ -16,7 +16,7 @@ export default function HistoryScreen() {
                         ...res.data[key], key,
                     }
                 })
-                setHistoryData(modifiedData)
+                setHistoryData(modifiedData.reverse())
             }
         })
     }, [])
@@ -27,7 +27,7 @@ export default function HistoryScreen() {
             </View>
             <ScrollView>
                 <View>
-                    {historyData.length > 0 && historyData.reverse().map((item) => {
+                    {historyData.length > 0 && historyData.map((item) => {
                         return (
                             <TouchableOpacity key={item.key} onPress={() => {
                                 setModalVisible(true)
@@ -130,6 +130,7 @@ const styles = StyleSheet.create({
     },
     modalText: {
         marginBottom: 15,
-        textAlign: "center"
+        textAlign: "center",
+        color: 'white'
     }
 });
