@@ -112,6 +112,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         padding: 35,
         marginTop: '30%',
+        marginBottom: 150,
         alignItems: "center",
         justifyContent: 'space-between',
         shadowColor: "#000",
