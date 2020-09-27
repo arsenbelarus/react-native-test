@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
         backgroundColor: "grey",
         borderRadius: 20,
         padding: 35,
-        marginTop: '30%',
+        marginTop: '10%',
         marginBottom: 150,
         alignItems: "center",
         justifyContent: 'space-between',
