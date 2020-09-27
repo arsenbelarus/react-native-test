@@ -27,7 +27,7 @@ export default function HistoryScreen() {
             </View>
             <ScrollView>
                 <View>
-                    {historyData.length > 0 && historyData.map((item) => {
+                    {historyData.length > 0 && historyData.reverse().map((item) => {
                         return (
                             <TouchableOpacity key={item.key} onPress={() => {
                                 setModalVisible(true)
